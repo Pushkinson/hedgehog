@@ -2,6 +2,7 @@
   color: $color-main-green
   background-color: #fff
   margin-top: 100px
+  margin-bottom: 90px
 
   &__wrapper
     margin: 0 auto
@@ -22,6 +23,7 @@
     justify-content: space-between
     align-items: center
     max-width: 1220px
+    transition: 0.5s
 
   &__item
     position: relative
@@ -42,7 +44,8 @@
     color: #fff
     justify-content: space-around
     align-items: center
-    font-family: 'Tahoma'
+    font-family: 'Raleway-Bold'
+    font-size: $font-normal*1.25
     font-weight: bold
     position: absolute
     top: -5px
@@ -52,14 +55,14 @@
     cursor: pointer
     position: absolute
     top: 23px
-    right: 30px
+    right: 55px
     &-icon
       width: 37px
       height: 37px
       &:hover + .slider__info-content
         display: flex
     &-content
-      font-family: 'Tahoma'
+      font-family: 'Raleway', 'Tahoma'
       font-size: $font-small
       color: #fff
       background-color: $color-main-green
@@ -113,6 +116,7 @@
     max-width: 210px
     &-name
       font-size: $font-large
+      font-family: 'Cormorant-Infant-Bold', 'Tahoma'
     &-description
       font-size: $font-small
       font-family: 'Raleway', 'Tahoma'

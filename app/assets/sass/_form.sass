@@ -1,0 +1,84 @@
+.form
+  font-family: 'Cormorant-Infant-Normal', 'Tahoma', 'Arial'
+  color: $color-main-green
+
+  &__wrapper
+    max-width: 1200px
+    margin: 0 auto
+    position: relative
+    justify-content: stretch
+    align-items: center
+    background-color: $color-grey
+    border-radius: 30px
+    padding: 40px 50px 80px
+
+  &__name
+    font-size: $font-normal*2.8125
+    font-family: 'Cormorant-Infant-Bold'
+    margin-bottom: 30px
+
+  &__radio
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 43px
+
+    &-buttons
+      justify-content: space-between
+      align-items: center
+
+    &-button
+      justify-content: space-around
+      align-items: center
+      margin: 0 7px
+      input[type=radio]
+        display: none
+      label
+        font-size: $font-small
+        padding: 16px 28px
+        white-space: nowrap
+        border-radius: 61px
+        background-color: #fff
+        border: 2px solid $color-second-green
+      input[type=radio]:checked + label
+        background-color: $color-second-green
+        color: #fff
+
+    &-switches
+      justify-content: space-around
+      align-items: center
+      &-group1
+        margin-right: 50px
+
+    &-switcher
+      justify-content: space-around
+      align-items: center
+      padding: 5px
+      input[type=radio]
+        margin-right: 5px
+
+  &__inputs
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    input
+      width: 352px
+      height: 62px
+      padding: 23px 27px
+      font-family: 'Raleway'
+      color: $color-main-green
+      border: none
+      border-radius: 8px
+
+  &__comment
+    width: 1096px
+    max-height: 62px
+    padding: 23px 27px
+    font-family: 'Raleway'
+    color: $color-main-green
+    border: none
+    border-radius: 8px
+
+  &__button
+    position: absolute
+    bottom: -35px
+    left: 440px

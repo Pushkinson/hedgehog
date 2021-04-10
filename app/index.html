@@ -68,6 +68,7 @@
       </div>
     </div>
   </header>
+<!--==================-->
   <main class="title">
     <div class="column title__wrapper">
       <div class="title__image">
@@ -82,6 +83,7 @@
       </div>
     </div>
   </main>
+<!--==================-->
   <section class="content">
     <div class="column content__wrapper">
       <div class="row content__hedgehog-1">
@@ -338,6 +340,130 @@
     </div>
   </section>
    <!--==================-->
+  <section class="form">
+    <div class="column form__wrapper">
+      <form action="#" method="post">
+        <h3 class="form__name">Заполните заявку и мы забронируем для Вас нового друга</h3>
+        <div class="row form__radio">
+          <div class=" row form__radio-buttons">
+            <div class="row form__radio-button">
+              <input id="radio-1" type="radio" name="wanna" value="forme" checked>
+              <label for="radio-1">хочу ёжика для себя</label>
+            </div>
+            <div class="form__radio-button">
+              <input id="radio-2" type="radio" name="wanna" value="forchild">
+              <label for="radio-2">хочу ёжика для детей</label>
+            </div>
+            <div class="form__radio-button">
+              <input id="radio-3" type="radio" name="wanna" value="forbreed">
+              <label for="radio-3">хочу ёжика для разведения</label>
+            </div>
+          </div>
+          <div class="row form__radio-switches">
+            <div class="column form__radio-switches-group1">
+              <div class="row form__radio-switcher">
+                <input id="radio-4" type="radio" name="number" value="1-2" checked>
+                <label for="radio-4">Мне нужен 1-2 ёжика</label>
+              </div>
+              <div class="form__radio-switcher">
+                <input id="radio-5" type="radio" name="number" value="3-4">
+                <label for="radio-5">Мне нужен 3-4 ёжика</label>
+              </div>
+            </div>
+            <div class="form__radio-switches-group2">
+              <div class="form__radio-switcher">
+                <input id="radio-6" type="radio" name="number" value=">3">
+                <label for="radio-6">Мне нужны 3 и более ёжиков</label>
+              </div>
+              <div class="form__radio-switcher">
+                <input id="radio-7" type="radio" name="number" value="0">
+                <label for="radio-7">Пока присматриваюсь</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row form__inputs">
+          <input type="name" name="name" id="name" placeholder="Ваше имя">
+          <input type="phone" name="phone" id="phone" placeholder="Ваш телефон">
+          <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+        </div>
+        <textarea class="form__comment" name="coment" id="coment" rows="5" placeholder="Комментарий к заявке"></textarea>
+      </form>
+      <div class="button form__button">
+        <p>Купить ёжика</p>
+      </div>
+    </div>
+  </section>
+<!--==================-->
+  <aside class="details">
+    <div class="column details__wrapper">
+      <div class="row details__balance">
+        <svg class="details__icon">
+          <use xlink:href="./assets/img/sprite.svg#hedgehog-aside"></use>
+        </svg>
+        <div class="details__text">
+          <p>У на осталось еще: <u>25 ёжиков</u></p>
+        </div>
+      </div>
+      <div class="row details__action">
+        <p>Торопитесь! Акция действует до 26. 02. 2023</p>
+      </div>
+    </div>
+  </aside>
+<!--==================-->
+  <footer class="footer">
+    <div class="column footer__wrapper">
+      <div class="row footer__content">
+        <div class="footer__logo">
+          <svg class="footer__icon">
+            <use xlink:href="./assets/img/sprite.svg#hedgehog-footer"></use>
+          </svg>
+        </div>
+        <div class="footer__navigation">
+          <nav class="navigation">
+            <ul class="row">
+              <li>
+                <a href="#" class="row navigation__catalog">
+                  <p class="link">КАТАЛОГ</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="link">О НАС</a>
+              </li>
+              <li>
+                <a href="#" class="link">КОНТАКТЫ</a>
+              </li>
+              <li>
+                <a href="#" class="link">ГАЛЕРЕЯ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row footer__social">
+          <svg class="footer__social-icon footer__icon-instagram">
+            <use xlink:href="./assets/img/sprite.svg#instagram"></use>
+          </svg>
+          <svg class="footer__social-icon footer__icon-facebook">
+            <use xlink:href="./assets/img/sprite.svg#facebook"></use>
+          </svg>
+          <svg class="footer__social-icon footer__icon-twitter">
+            <use xlink:href="./assets/img/sprite.svg#twitter"></use>
+          </svg>
+        </div>
+        <div class="footer__phone">
+          <div class="row phone">
+            <div class="phone__number">+7 (965) 569-89-98</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__rights">
+        <p>Все права защищены.</p>
+      </div>
+      <div class="footer__info">
+        <p>Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+      </div>
+    </div>
+  </footer>
   <script src="./js/main.js"></script>
 </body>
 </html>
