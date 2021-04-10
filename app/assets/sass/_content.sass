@@ -1,0 +1,79 @@
+.content
+  color: $color-main-green
+  background-color: #fff
+  margin-top: 20px
+
+  &__wrapper
+    margin: 0 auto
+    justify-content: space-around
+    align-items: center
+    position: relative
+
+  &__hedgehog-1
+    position: absolute
+    justify-content: flex-start
+    align-items: center
+    top: -240px
+    left: -100px
+    img
+      width: 550px
+      height: 412px
+
+  &__hedgehog-2
+    width: 511px
+    height: 331px
+    position: absolute
+    justify-content: flex-end
+    align-items: center
+    top: -130px
+    right: 0
+    img
+      width: 511px
+      height: 331px
+
+.about
+  justify-content: space-around
+  align-items: center
+  margin-top: -110px
+
+  &__item
+    justify-content: stretch
+    align-items: center
+    width: 240px
+    margin: 0 60px
+
+    h3
+      font-family: 'Cormorant-Infant-Bold'
+      font-size: $font-normal
+      text-align: center
+      margin-top: 30px
+
+    p
+      font-size: $font-small
+      text-align: center
+      font-weight: 400
+      margin-top: 10px
+
+  &__image
+    width: 152px
+    height: 152px
+    border-radius: 50%
+    box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF
+    justify-content: space-around
+    align-items: center
+    &-hedgehog
+      background-color: $color-yellow
+    &-syringe
+      background-color: $color-lightgreen
+    &-heart
+      background-color: $color-second-green
+
+  &__icon-hedgehog
+    width: 72px
+    height: 72px
+  &__icon-syringe
+    width: 46px
+    height: 46px
+  &__icon-heart
+    width: 43px
+    height: 43px

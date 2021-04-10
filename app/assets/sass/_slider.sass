@@ -1,0 +1,131 @@
+.slider
+  color: $color-main-green
+  background-color: #fff
+  margin-top: 100px
+
+  &__wrapper
+    margin: 0 auto
+    justify-content: center
+    align-items: center
+    max-width: 1400px
+
+  &__arrow
+    width: 24px
+    height: 24px
+    cursor: pointer
+
+  &__container
+    margin: 0 30px
+    overflow: hidden
+
+  &__frame
+    justify-content: space-between
+    align-items: center
+    max-width: 1220px
+
+  &__item
+    position: relative
+    background-color: $color-yellow
+    border-radius: 20px
+    width: 570px
+    height: 432px
+    padding: 54px 0 33px 59px
+    margin: 20px
+    align-items: flex-end
+    &--maksim
+      background-color: $color-lightgreen
+
+  &__sale
+    width: 68px
+    height: 36px
+    background-color: $color-second-green
+    color: #fff
+    justify-content: space-around
+    align-items: center
+    font-family: 'Tahoma'
+    font-weight: bold
+    position: absolute
+    top: -5px
+    left: 60px
+
+  &__info
+    cursor: pointer
+    position: absolute
+    top: 23px
+    right: 30px
+    &-icon
+      width: 37px
+      height: 37px
+      &:hover + .slider__info-content
+        display: flex
+    &-content
+      font-family: 'Tahoma'
+      font-size: $font-small
+      color: #fff
+      background-color: $color-main-green
+      width: 200px
+      height: 70px
+      justify-content: space-around
+      align-items: center
+      position: absolute
+      top: 50px
+      right: -80px
+      z-index: 3
+      display: none
+      &-syringe
+        &-icon
+          width: 20px
+          height: 20px
+          margin-right: 7px
+      &-heart
+        &-icon
+          width: 20px
+          height: 20px
+          margin-right: 7px
+      &-arrow
+        width: 0
+        height: 0
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-bottom: 10px solid $color-main-green
+        position: absolute
+        top: -9px
+        left: 82px
+
+  &__plus
+    position: absolute
+    bottom: 0px
+    right: 0px
+    width: 50px
+    height: 50px
+    cursor: pointer
+    justify-content: flex-end
+    align-items: flex-end
+    &--yellow
+      background: linear-gradient(to bottom right, $color-yellow 50%, #fff 50%)
+    &--lightgreen
+      background: linear-gradient(to bottom right, $color-lightgreen 50%, #fff 50%)
+    &-icon
+      width: 26px
+      height: 26px
+
+  &__content
+    max-width: 210px
+    &-name
+      font-size: $font-large
+    &-description
+      font-size: $font-small
+      font-family: 'Raleway', 'Tahoma'
+      line-height: 22px
+      margin: 17px 0 7px 0
+    &-oldprice
+      font-size: $font-large/2
+      color: #C2CCCA
+      text-decoration: line-through
+    &-price
+      font-size: $font-large
+
+  &__image
+    width: 363px
+    height: 265px
+    margin-left: -50px

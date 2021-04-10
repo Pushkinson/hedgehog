@@ -1,0 +1,36 @@
+.navigation
+  width: 560px
+  ul
+    justify-content: space-between
+    li
+      list-style: none
+      position: relative
+
+  &__catalog
+    justify-content: space-between
+    align-items: center
+
+  &__list
+    &--hide
+      display: none
+    &--active
+      display: flex
+      box-shadow: 4px 4px 20px #C2CCCA
+      padding: 10px 24px
+      border-radius: 8px
+      background-color: #fff
+      position: absolute
+      z-index: 2
+      top: 30px
+      left: -15px
+      li
+        margin: 9px 0
+
+
+  &__arrow
+    width: 6px
+    height: 8px
+    margin-right: 9px
+    transition: 0.3s
+    &--active
+      transform: rotate(90deg)

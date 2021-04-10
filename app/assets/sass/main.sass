@@ -1,0 +1,52 @@
+$font-normal: 1em
+$font-large: 3.125em
+$font-small: 0.875em
+$color-main-green: #195557
+$color-second-green: #70908B
+$color-grey: #EAEEEF
+$color-yellow: #FFEDCD
+$color-lightgreen: #E2F0DF
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  font-size: 16px
+  font-family: 'Cormorant-Infant-Normal', 'Tahoma', 'Arial'
+
+a
+  text-decoration: none
+  cursor: pointer
+  color: inherit
+
+.link
+  border-bottom: 1px solid transparent
+  &:hover
+    border-bottom: 1px solid $color-main-green
+
+.row
+  display: flex
+  flex-direction: row
+
+.column
+  display: flex
+  flex-direction: column
+
+.button
+  width: 328px
+  height: 69px
+  color: #fff
+  font-family: 'Raleway', 'Tahoma'
+  background-color: $color-second-green
+  cursor: pointer
+  border-radius: 40px
+  box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF
+  &:hover
+    background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%)
+    color: $color-main-green
+
+
+
+@import "fonts", "logo", "phone", "navigation", "basket", "slider", "header", "title", "content"
