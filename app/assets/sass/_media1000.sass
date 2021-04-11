@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1000px)
+  .button
+    width: 280px
+
+  .header
+    padding: 30px 20px
+    &__logo
+      justify-content: space-around
+    &__navigation
+      display: none
+
+  .mobile
+    &__header
+      display: flex
+
+  .phone
+    &__number
+      display: none
+
+  .title
+    padding: 30px 20px 100px
+    box-shadow: none
+    &__wrapper
+      margin: 0
+    h2
+      font-size: $font-normal*1.5
+      margin-bottom: 7px
+    p
+      font-size: $font-normal*0.75
+    &__image
+      margin-bottom: 12px
+    &__icon
+      width: 202px
+      height: 44px
+    &__button
+      height: 59px
+
+  .content
+    &__wrapper
+      margin: 0
+      justify-content: flex-start
+    &__hedgehog-2
+      width: 313px
+      height: 203px
+      img
+        width: 293px
+        height: 183px
+
+  .about
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: -80px
+    &__item
+      justify-content: space-between
+      align-items: center
+      margin: 0 0 20px 0
+      &-space
+        display: flex
+        min-width: 475px
+
+  .form
+    &__wrapper
+      border-radius: 0
+    &__radio
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      &-buttons
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+      &-button
+        margin-top: 15px
+      &-switches
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+      &-switcher
+        margin-top: 15px
+    &__inputs
+      flex-direction: column
+      input
+        width: 100%
+        height: 62px
+        margin-top: 10px
+    &__button
+      bottom: 30px
+      left: 20px
+
+  .footer
+    &__wrapper
+      justify-content: flex-start
+      align-items: flex-start
+      padding: 35px 20px 30px
+    &__content
+      justify-content: flex-start
+      align-items: flex-start
+      flex-direction: column
+      position: relative
+    &__logo
+      flex-grow: 0
+      margin-left: -10px
+      margin-bottom: 60px
+    &__navigation
+      nav
+        width: 100%
+      ul
+        flex-direction: column
+      li
+        margin-bottom: 30px
+    &__social
+      flex-direction: column
+      margin: 20px 0
+      position: absolute
+      top: 0
+      right: 0
+      &-icon
+        margin: 10px 0

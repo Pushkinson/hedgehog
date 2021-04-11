@@ -10,7 +10,37 @@
 <body>
   <header class="header">
     <div class="row header__wrapper">
-      <div class="header__logo">
+      <!--mobile-->
+      <div class="mobile">
+        <div class="mobile__header">
+          <svg class="mobile__header-image">
+            <use xlink:href="./assets/img/sprite.svg#mobile-menu"></use>
+          </svg>
+        </div>
+        <div class="column mobile__navigation">
+          <div class="row mobile__navigation-header">
+            <svg class="mobile__navigation-close">
+              <use xlink:href="./assets/img/sprite.svg#close"></use>
+            </svg>
+            <div class="row mobile__navigation-logo">
+              <svg class="logo__image">
+                  <use xlink:href="./assets/img/sprite.svg#logo"></use>
+              </svg>
+            </div>
+          </div>
+          <ul class="column mobile__navigation-menu">
+            <li><a href="#" class="link">КАТАЛОГ</a></li>
+            <li><a href="#" class="link">О НАС</a></li>
+            <li><a href="#" class="link">КОНТАКТЫ</a></li>
+            <li><a href="#" class="link">ГАЛЕРЕЯ</a></li>
+          </ul>
+          <div class="row mobile__navigation-phone">
+            <div class="phone__number">+7 (965) 569-89-98</div>
+          </div>
+        </div>
+      </div>
+      <!--End mobile-->
+      <div class="row header__logo">
         <div class="logo">
           <svg class="logo__image">
               <use xlink:href="./assets/img/sprite.svg#logo"></use>
@@ -85,19 +115,13 @@
   </main>
 <!--==================-->
   <section class="content">
-    <div class="column content__wrapper">
+    <div class="row content__wrapper">
       <div class="row content__hedgehog-1">
         <img src="./assets/img/hedgehog-1.svg" alt="hedgehog-1">
       </div>
       <div class="row content__hedgehog-2">
         <img src="./assets/img/hedgehog-2.svg" alt="hedgehog-1">
       </div>
-      <!-- <svg class="content__hedgehog-1">
-        <use xlink:href="./assets/img/sprite.svg#hedgehog-1"></use>
-      </svg> -->
-      <!-- <svg class="content__hedgehog-2">
-        <use xlink:href="./assets/img/sprite.svg#hedgehog-2"></use>
-      </svg> -->
       <div class="row about">
         <div class="column about__item">
           <div class="row about__image about__image-hedgehog">
@@ -108,6 +132,7 @@
           <h3>РАЗВЕДЕНИЕ ЕЖИКОВ</h3>
           <p>Собственная ферма, уход и содержание</p>
         </div>
+        <div class="about__item about__item-space"></div>
         <div class="column about__item">
           <div class="row about__image about__image-syringe">
             <svg class="about__icon-syringe">
@@ -132,7 +157,7 @@
   <!--==================-->
   <section class="slider">
     <div class="row slider__wrapper">
-      <svg class="slider__arrow slider__arrow-left">
+      <svg class="slider__arrow slider__arrow-left link-lightgreen--left">
         <use xlink:href="./assets/img/sprite.svg#slider-arrow-left"></use>
       </svg>
       <div class="row slider__container">
@@ -334,7 +359,7 @@
           </div>
         </div>
       </div>
-      <svg class="slider__arrow slider__arrow-right">
+      <svg class="slider__arrow slider__arrow-right link-lightgreen--right">
         <use xlink:href="./assets/img/sprite.svg#slider-arrow-right"></use>
       </svg>
     </div>
@@ -350,11 +375,11 @@
               <input id="radio-1" type="radio" name="wanna" value="forme" checked>
               <label for="radio-1">хочу ёжика для себя</label>
             </div>
-            <div class="form__radio-button">
+            <div class="row form__radio-button">
               <input id="radio-2" type="radio" name="wanna" value="forchild">
               <label for="radio-2">хочу ёжика для детей</label>
             </div>
-            <div class="form__radio-button">
+            <div class="row form__radio-button">
               <input id="radio-3" type="radio" name="wanna" value="forbreed">
               <label for="radio-3">хочу ёжика для разведения</label>
             </div>

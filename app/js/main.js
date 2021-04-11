@@ -37,5 +37,18 @@
     slideNumber --;
   });
 
+  const mobileHeaderImage     = document.querySelector('.mobile__header-image'),
+        mobileNavigation      = document.querySelector('.mobile__navigation'),
+        mobileNavigationClose = document.querySelector('.mobile__navigation-close');
+
+  mobileHeaderImage.addEventListener('click', (event) => {
+    event.stopPropagation();
+    mobileNavigation.classList.toggle('mobile__navigation--active');
+  });
+
+  mobileNavigationClose.addEventListener('click', (event) => {
+    event.stopPropagation();
+    mobileNavigation.classList.toggle('mobile__navigation--active');
+  });
 
 }());

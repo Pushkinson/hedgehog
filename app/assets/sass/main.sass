@@ -21,10 +21,26 @@ a
   cursor: pointer
   color: inherit
 
+li
+  list-style: none
+
 .link
   border-bottom: 1px solid transparent
   &:hover
     border-bottom: 1px solid $color-main-green
+
+.link-lightgreen
+  border-bottom: 1px solid transparent
+  &:hover
+    border-bottom: 1px solid $color-second-green
+  &--left
+    border-left: 1px solid transparent
+    &:hover
+      border-left: 1px solid $color-second-green
+  &--right
+    border-right: 1px solid transparent
+    &:hover
+      border-right: 1px solid $color-second-green
 
 .row
   display: flex
@@ -52,4 +68,4 @@ a
 
 
 
-@import "fonts", "logo", "phone", "navigation", "basket", "slider", "header", "title", "content", "form", "details", "footer"
+@import "fonts", "logo", "phone", "navigation", "basket", "slider", "header", "title", "content", "form", "details", "footer", "mobile", "_media1500", "_media1300", "_media1000", "_media700", "_media320"

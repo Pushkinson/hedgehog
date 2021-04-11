@@ -1,0 +1,101 @@
+@media only screen and (max-width: 700px)
+  .about
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: -80px
+    &__item
+      justify-content: space-between
+      align-items: center
+      &-space
+        display: flex
+        min-width: 475px
+
+  .slider
+    margin-top: 20px
+    margin-bottom: 30px
+    padding-bottom: 60px
+    &__wrapper
+      flex-direction: column
+      position: relative
+    &__arrow
+      &-left
+        width: 44px
+        height: 44px
+        position: absolute
+        bottom: -70px
+        left: 50px
+      &-right
+        width: 44px
+        height: 44px
+        position: absolute
+        bottom: -70px
+        right: 50px
+    &__container
+      margin: 0
+      padding-top: 10px
+    &__frame
+      justify-content: space-between
+      align-items: center
+      max-width: 280px
+      transition: 0.5s
+    &__item
+      position: relative
+      border-radius: 20px
+      width: 245px
+      height: auto
+      padding: 44px 0 33px 25px
+      margin: 0
+      margin-right: 40px
+      align-items: flex-end
+    &__sale
+      top: -10px
+      left: 40px
+      z-index: 10
+    &__info
+      &-icon
+        display: none
+      &-content
+        display: flex
+        font-family: 'Raleway', 'Tahoma'
+        font-size: $font-normal*0.63
+        color: $color-main-green
+        background-color: rgba(0, 0, 0, 0)
+        width: 120px
+        height: 10px
+        justify-content: space-around
+        align-items: center
+        position: absolute
+        top: 0
+        right: -50px
+        z-index: 0
+        &-syringe
+          &-icon
+            width: 15px
+            height: 15px
+            margin-right: 3px
+        &-heart
+          &-icon
+            width: 15px
+            height: 15px
+            margin-right: 3px
+        &-arrow
+          display: none
+    &__content
+      &-name
+        font-size: $font-normal*1.875
+      &-description
+        font-size: $font-normal*0.6
+        margin: 5px 0 7px 0
+      &-oldprice
+        font-size: $font-normal*1.2
+        color: #C2CCCA
+        text-decoration: line-through
+      &-price
+        font-size: $font-normal*2
+    &__image
+      margin-left: -30px
+      width: 177px
+      height: 159px
+      img
+        width: 177px
+        height: 129px
