@@ -61,16 +61,16 @@ gulp.task('clear', function() {
     return cache.clearAll();
 });
 
-// gulp.task('img', function() {
-//     return gulp.src('./app/assets/img/**/*')
-//     .pipe(cache(imagemin({
-//         interlaced: true,
-//         progressive: true,
-//         svgoPlugins: [{ removeViewBox: false }],
-//         use: [pngquant()]
-//     })))
-//     .pipe(gulp.dest('./dist/assets/img'));
-// });
+gulp.task('img', function() {
+    return gulp.src('./app/assets/img/**/*')
+    .pipe(cache(imagemin({
+        interlaced: true,
+        progressive: true,
+        svgoPlugins: [{ removeViewBox: false }],
+        use: [pngquant()]
+    })))
+    .pipe(gulp.dest('./dist/assets/img'));
+});
 
 gulp.task('svgSprite', function () {
     return gulp.src('./app/assets/svg/*.svg')
